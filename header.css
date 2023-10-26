@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+  display: flex;
+  background-color: rgb(14, 14, 95);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* margin-bottom: 50px; */
+  align-items: center;
+}
+
+#logo {
+  background-image: url("Images/PNH.png");
+  width: 140px;
+  height: 140px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-left: 40px;
+}
+
+#text_logo {
+  color: rgb(242, 246, 246);
+  font-size: 28px;
+  text-align: center;
+  flex-grow: 1;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+  margin: 0 auto;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#text_logo1 {
+  color: black;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  margin-top: 30.5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.bouton-retour {
+  display: inline-block;
+  padding: 7px 15px;
+  background-color: rgb(160, 177, 235);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.bouton-retour:hover {
+  background-color: rgb(65, 165, 231);
+}
+#retour{
+  width: 23px;
+  height: 11px;
+}
+
+
+
+
+.menu-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  /* background-color: #f0f0f0; */
+}
+
+.menu-interface {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.menu {
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 3%;
+  background-color: #b8d2fa;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+.menu li {
+  margin-bottom: 5px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  width: 90px;
+}
+.menu li a:hover{
+ color: rgb(241, 122, 10);
+ font-size: 1.1em;
+}
+.menu-container:hover .menu {
+  display: block;
+}

@@ -1,0 +1,112 @@
+:root{
+    background-color: rgb(7, 25, 31);
+    font-size: 65%;
+}
+body {
+        position: relative; /* Assurez-vous que l'élément parent a une position relative */
+      }
+      
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+        background-repeat: no-repeat; 
+        background-position: center center; 
+        background-size: 100%; 
+        opacity: 1; 
+        z-index: -1; 
+
+
+
+    /* background-color: rgb(28, 4, 114);  */
+    background-image: url('Images/p.webp'); 
+  }
+  #tera{
+    font-size: xx-large;
+    color: #ebeaec;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -305px 100px;
+  }
+  
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.first{
+    width: 100vw ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+}
+.first > * {
+    width: 100%;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+#trio{
+
+    
+    margin-top: 15px;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 40rem;
+    text-align: center;
+    border: 0.1rem solid rgb(246, 224, 224);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #03268f;
+    background: linear-gradient(rgb(253, 241, 241), rgb(236, 234, 234));
+    
+}
+
+#trio:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: transform 150ms;
+
+}
+
+#trio[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    
+}
+h1{
+    color: rgb(2, 2, 102);
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 2em;
+}
+
